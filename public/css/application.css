@@ -1,0 +1,13 @@
+body {
+  background: black url("https://static.pexels.com/photos/4871/black-and-white-beach-sand-dune.jpg") no-repeat center center fixed;
+}
+
+#heading {
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+}
+
+#heading-background {
+  background-color: white;
+}
+

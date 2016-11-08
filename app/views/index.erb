@@ -1,0 +1,28 @@
+<container class="jumbotron" role="main">
+  <container id="heading-background">
+  <h1 id="heading" align="center">LOVE MATCHER</h1>
+  </container>
+  <form class="form-inline" align="center" action="/love" method='post'>
+  <div class="form-group">
+    <input type='text' class="form-control" name='first_name' placeholder='name one'/>
+  </div>
+  <div class="form-group">
+    <input type='text' class="form-control" name='second_name' placeholder='name two'/>
+  </div>
+    <button type='submit' class="btn btn-lg btn-danger">Submit</button>
+  </form>
+</container>
+
+<container class="boxed" align="center">
+<% if @first_name && @second_name %>
+<h1>First Name: <%= @first_name %> | Second Name: <%= @second_name %></h1>
+<h1>Result: <%= @love["result"] %></h1>
+<h1>Match Percentage: <%= @love["percentage"] %>%</h1>
+<div align="center"><img src="<%= add_giphy %>"></img></div>
+<% end %>
+</container>
+
+
+
+
+
